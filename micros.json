@@ -1,17 +1,16 @@
 {
-    "version": "0.1.0",
-    "micros": [
+  "version": "0.1.0",
+  "micros": [
     {
-        "title": "Telar Social",
-        "name": "telar-social",
-        "description": "Telar Social Engine is a scalable cloud native social network. Whatever your creative idea or unique bussiness model, you can build it by Telar running on any public or private cloud.",
-        "templates": {
-            "telar-social-encore": "https://github.com/telarpress/templates",
-            "telar-social-js": "https://github.com/telarpress/templates",
-            "telar-social-raw": "https://github.com/telarpress/templates"
-        },
-        "default_template": "telar-social-encore"
-    },
-      
-      ],
+      "title": "Telar Social",
+      "name": "telar-social",
+      "description": "Telar Social Engine is a scalable cloud native social network. Whatever your creative idea or unique bussiness model, you can build it by Telar running on any public or private cloud.",
+      "templates": {
+        "telar-social-encore": "https://github.com/telarpress/templates",
+        "telar-social-js": "https://github.com/telarpress/templates",
+        "telar-social-raw": "https://github.com/telarpress/templates"
+      },
+      "default_template": "telar-social-encore"
+    }
+  ]
 }
