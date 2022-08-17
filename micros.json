@@ -10,7 +10,7 @@
         "telar-social-js": "https://github.com/telarpress/templates",
         "telar-social-raw": "https://github.com/telarpress/templates"
       },
-      "default_template": "telar-social-encore"
+      "defaultTemplate": "telar-social-encore"
     }
   ]
 }
