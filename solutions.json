@@ -6,9 +6,11 @@
       "name": "telar-social",
       "description": "Telar Social Engine is a scalable cloud native social network. Whatever your creative idea or unique bussiness model, you can build it by Telar running on any public or private cloud.",
       "templates": {
-        "encore": "https://github.com/telarpress/solutions",
+        "ts-encore": "https://github.com/telarpress/solutions",
+        "ts-ui": "https://github.com/telarpress/solutions",
+        "ts-ui-encore": "https://github.com/telarpress/solutions",
       },
-      "defaultTemplate": "encore"
+      "defaultTemplate": "ts-ui-encore"
     }
   ]
 }
