@@ -8,7 +8,7 @@
       "templates": {
         "ts-encore": "https://github.com/telarpress/solutions",
         "ts-ui": "https://github.com/telarpress/solutions",
-        "ts-ui-encore": "https://github.com/telarpress/solutions",
+        "ts-ui-encore": "https://github.com/telarpress/solutions"
       },
       "defaultTemplate": "ts-ui-encore"
     }
