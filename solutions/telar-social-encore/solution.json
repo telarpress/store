@@ -47,8 +47,8 @@
           },
           {
             "domain": "api.solar.local",
-            "target": "http://localhost:400",
-             "ws": "ws://localhost:400"
+            "target": "http://localhost:4000",
+             "ws": "ws://localhost:4000"
           },
           {
             "domain": "mongo.telar.local",
