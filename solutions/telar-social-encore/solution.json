@@ -86,6 +86,7 @@
       "worker": true,
       "config": {
         "environment": {
+          "TELAR_ENV": "development",
           "MongoHost": "mongodb://127.0.0.1:40978/telar",
           "MongoDatabase": "telar",
           "RecaptchaKey": "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe",
