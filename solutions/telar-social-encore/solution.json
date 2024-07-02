@@ -93,7 +93,7 @@
           "TSClientSecret": "Your_GITHUB_CLIENT_SECRET",
           "PhoneAuthId": "",
           "PhoneAuthToken": "",
-          "RefEmailPass": "0edc68b1e682c9",
+          "RefEmailPass": "",
           "PayloadSecret": "HMAC_SECRET_KEY",
           "AdminUsername": "admin@telar.dev",
           "AdminPassword": "P@55w0rd",
