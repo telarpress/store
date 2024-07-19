@@ -7,6 +7,11 @@
       "description": "Telar Social Engine is a scalable cloud native social network. Whatever your creative idea or unique bussiness model, you can build it by Telar running on any public or private cloud."
     },
     {
+      "title": "Telar Social using Go version",
+      "name": "telar-social-go",
+      "description": "Telar Social Engine is a scalable cloud native social network. Whatever your creative idea or unique bussiness model, you can build it by Telar running on any public or private cloud."
+    },
+    {
       "title": "Telar Social using Encore",
       "name": "telar-social-encore",
       "description": "Telar Social Engine is a scalable cloud native social network. Whatever your creative idea or unique bussiness model, you can build it by Telar running on any public or private cloud."

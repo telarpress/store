@@ -1,0 +1,107 @@
+{
+  "services": {
+    "in-memory-mongo": {
+      "exclude": false,
+      "worker": true,
+      "config": {
+        "port": 40978
+      }
+    },
+    "smtp": {
+      "exclude": false,
+      "worker": true,
+      "config": {
+        "webPort": 40998,
+        "smtpPort": 1025
+      }
+    },
+    "file-storage": {
+      "exclude": false,
+      "worker": true,
+      "config": {
+        "port": 40988
+      }
+    },
+    "mongoui": {
+      "exclude": false,
+      "worker": true,
+      "config": {
+        "port": 63310,
+        "connectionList": [
+          {
+            "uri": "mongodb://127.0.0.1:40978/telar",
+            "name": "telar"
+          }
+        ]
+      }
+    },
+    "ssl-proxy": {
+      "worker": true,
+      "config": {
+        "port": 443,
+        "hosts": [
+          {
+            "domain": "solar.local",
+            "target": "http://localhost:3030",
+            "ws": "ws://localhost:3030"
+          },
+          {
+            "domain": "api.solar.local",
+            "target": "http://localhost:4000",
+             "ws": "ws://localhost:4000"
+          },
+          {
+            "domain": "mongo.telar.local",
+            "target": "http://localhost:63310",
+            "ws": null
+          },
+          {
+            "domain": "mail.telar.local",
+            "target": "http://localhost:40998",
+            "ws": null
+          }
+        ]
+      }
+    },
+    "ts-ui": {
+      "exclude": false,
+      "worker": true,
+      "config": {
+        "environment": {
+          "VITE_APP_GATEWAY": "https://api.solar.local",
+          "VITE_APP_AUTH_WEB_URI": "https://api.solar.local/auth",
+          "VITE_APP_GITHUB_OAUTH_URL": "https://api.solar.local/auth/login/github",
+          "VITE_APP_BASE_ROUTE_API": "",
+          "VITE_APP_NAME": "Telar Social",
+          "VITE_APP_COMPANY_NAME": "Telar",
+          "VITE_APP_EMAIL_SUPPORT": "support@telar.dev",
+          "VITE_APP_WEBSOCKET_URL": "",
+          "VITE_APP_RECAPTCHA_SITE_KEY": "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI",
+          "FAST_REFRESH": "false",
+          "GENERATE_SOURCEMAP": "false"
+        }
+      }
+    },
+    "ts-ui-go": {
+      "worker": true,
+      "config": {
+        "environment": {
+          "TELAR_ENV": "development",
+          "MongoHost": "mongodb://127.0.0.1:40978/telar",
+          "MongoDatabase": "telar",
+          "RecaptchaKey": "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe",
+          "TSClientSecret": "Your_GITHUB_CLIENT_SECRET",
+          "PhoneAuthId": "",
+          "PhoneAuthToken": "",
+          "RefEmailPass": "",
+          "PayloadSecret": "HMAC_SECRET_KEY",
+          "AdminUsername": "admin@telar.dev",
+          "AdminPassword": "P@55w0rd",
+          "Key": "LS0tLS1CRUdJTiBFQyBQUklWQVRFIEtFWS0tLS0tCk1IY0NBUUVFSUtFdWJwQmlIa1pRWWxPUmJDeThnR1R6OHR6cldzakJKQTZHZkZDclE5OGNvQW9HQ0NxR1NNNDkKQXdFSG9VUURRZ0FFT3I2ck1tUlJOS3VadXd3cy9oV3dGVE02RUNFRWFKR0dBUkNKVU80VWZvVVJsOGI0SlRoRwp0OFZERktlUjJpK1p4RSt4aC93VEJhSi96dnRTcVppTm5RPT0KLS0tLS1FTkQgRUMgUFJJVkFURSBLRVktLS0tLQo=",
+          "KeyPub": "LS0tLS1CRUdJTiBQVUJMSUMgS0VZLS0tLS0KTUZrd0V3WUhLb1pJemowQ0FRWUlLb1pJemowREFRY0RRZ0FFT3I2ck1tUlJOS3VadXd3cy9oV3dGVE02RUNFRQphSkdHQVJDSlVPNFVmb1VSbDhiNEpUaEd0OFZERktlUjJpK1p4RSt4aC93VEJhSi96dnRTcVppTm5RPT0KLS0tLS1FTkQgUFVCTElDIEtFWS0tLS0tCg==",
+          "ServiceAccount": "your_firebase_service_account_in_base64_here"
+        }
+      }
+    }
+  }
+}
