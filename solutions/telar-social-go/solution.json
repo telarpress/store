@@ -85,6 +85,7 @@
     "ts-ui-go": {
       "worker": true,
       "config": {
+        "port":4000,
         "environment": {
           "TELAR_ENV": "development",
           "MongoHost": "mongodb://127.0.0.1:40978/telar",
